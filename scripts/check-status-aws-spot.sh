@@ -21,7 +21,7 @@ if [ "$HTTP_CODE" -eq 200 ]; then
     echo "ALERT: This is instace os sleep in : $TERMINATION_TIME"
     # Case necessary executing rsync, backup or script, include below.(ex: aws s3 sync /data s3://my-bucket)
 elif [ "$HTTP_CODE" -eq 404 ]; then
-    echo "STATUS: Instance OK. Not having interruption schedule."
+    echo "STATUS: Instance OK. Not having interruption scheduled."
 else
     echo "STATUS: Error from get status code ->(HTTP $HTTP_CODE)"
 fi
